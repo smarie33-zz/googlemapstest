@@ -1,0 +1,27 @@
+{
+  "name": "moat",
+  "version": "1.0.0",
+  "description": "Create a web app that calculates the distance (in nautical miles) between two airports",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "author": "Shannon Mosley",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.5",
+    "cors-anywhere": "^0.4.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

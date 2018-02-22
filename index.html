@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Shannon Mosley Moat Test</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<h1 class="text-center mt-3 mb-3">Shannon Mosley Moat Test :-)</h1>
+					<h6 class="pl-4 pr-4 mb-4">
+						Create a web app that calculates the distance (in nautical miles) between two airports. The app should autocomplete the airports and should feature all airports in the U.S. only. Bonus: plot the trip on Google maps.
+					</h6>
+				</div>
+			</div>
+			<form>
+				<div class="row">
+					<div class="col-md mb-4">
+						<input type="text" class="form-control" id="airport_1" placeholder="Search for the 1st airport"autocomplete="off">
+						<ul class="list-group" id="airport_1_auto"></ul>
+					</div>
+					<div class="col-md mb-4">
+						<input type="text" class="form-control" id="airport_2" placeholder="Search for the 2st airport" autocomplete="off" >
+						<ul class="list-group" id="airport_2_auto"></ul>
+					</div>
+					<div class="col-md-2 mb-4">
+						<button type="submit" class="btn btn-primary" id="hit-api">Find Distance</button>
+					</div>
+				</div>
+			</form>
+			<div class="row error invisible">
+				<div class="col-sm">
+					<div class="text-danger text-center pb-4"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<h2 id="mile-calculation" class="text-success text-center"></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm pt-5 pb-5 mb-4" id="google-map">
+				</div>
+			</div>
+		</div>
+		<script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoo5LstczdK0WWb2NPRihWM4YkRFvoBas">
+    </script>
+		<script type="text/javascript" src="js/airportFunctionality.js"></script>
+	</body>
+</html>
