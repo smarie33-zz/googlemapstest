@@ -1,4 +1,4 @@
-# MOAT test
+# Google Map test
 ###### es6, bable, bootstrap, node, google maps
 
 <small>Author: Shannon Mosley</small>
